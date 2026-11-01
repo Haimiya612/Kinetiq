@@ -9,20 +9,20 @@ This is the master plan. A checked item means the decision/documentation exists,
 - [x] Adaptive light/dark visual direction.
 - [x] Dual module strategy: Synthetiq compatibility + native Kinetiq modules.
 - [x] Initial architecture and security principles.
-- [ ] Confirm minimum Horizon OS / Android API and device support.
-- [ ] Inspect and document the actual Synthetiq module specification.
-- [ ] Select dependency versions and licensing policy.
-- [ ] Establish build, signing, and Quest installation workflow.
+- [x] Confirm initial Quest 3 / Android API support baseline (documented; device verification pending).
+- [x] Inspect and document the published Synthetiq module specification (public guide inspected; unpublished internals remain unknown).
+- [x] Select initial dependency versions and licensing policy (release artefact licence review remains open).
+- [ ] Establish verified build, signing, and Quest installation workflow.
 
 **Exit criteria:** implementation-ready product specification and verified technical constraints.
 
 ## Phase 1 — Native application foundation
 
-- [ ] Create Kotlin/Gradle project and package structure.
-- [ ] Build Compose navigation and adaptive design system.
-- [ ] Add Quest capability detection and Android fallbacks.
-- [ ] Add settings persistence, structured logging, and error handling.
-- [ ] Add unit tests and CI build/lint checks.
+- [x] Create Kotlin/Gradle project and package structure.
+- [x] Build Compose navigation and adaptive design system.
+- [x] Add Quest capability detection and Android fallbacks.
+- [x] Add settings persistence, structured logging, and error handling.
+- [x] Add unit tests and CI build/lint checks.
 - [ ] Produce and install first APK on Quest 3.
 
 **Exit criteria:** app launches reliably, navigation works, settings persist, and CI builds it.
