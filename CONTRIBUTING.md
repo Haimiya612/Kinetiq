@@ -1,12 +1,9 @@
 # Contributing to Kinetiq
 
-Kinetiq is in its foundation stage. Before large implementation work begins:
-
-- Read the roadmap, architecture, module-system, design-system, and security documents.
-- Keep changes focused and explain their purpose.
-- Add tests for parsers, state transitions, and persistence behaviour.
-- Do not commit secrets, credentials, private URLs, or personal media data.
-- Do not claim compatibility with an external module format without fixtures and tests.
-- Respect copyright, source terms, DRM, and access controls.
-
-Proposed code style: Kotlin conventions and small, testable components. The final lint/format toolchain will be selected in Phase 1.
+- Keep changes aligned with `docs/ROADMAP.md`.
+- Do not mark a feature complete without implementation, automated tests where applicable, and device verification where required.
+- Keep Horizon OS-specific APIs behind capability checks and Android fallbacks.
+- Do not add Google Mobile Services dependencies to the Quest runtime without a verified Horizon OS-compatible alternative.
+- Never commit credentials, cookies, signing keys, personal media paths, or signed media URLs.
+- Treat module packages, metadata, subtitles, and network responses as untrusted input.
+- Preserve the adapter boundary: external module formats must not define Kinetiq's internal API.
